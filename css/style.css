@@ -1,7 +1,7 @@
 *{
   padding: 0;
   margin: 0;
-  font-family: PIXELADE;
+  box-sizing: border-box;
 }
 @font-face {
   font-family: PIXELADE;
@@ -16,6 +16,19 @@
   --purple2:#650C6B;
   --grey1: #DADDD8;
   --grey2: #797F76;
+  --font-family: PIXELADE;
+  --transparent-light-color: rgba(255,255,255,.05);
+  --transparent-dark-color: rgba(0,0,0,.75);
+  --font-size-xsm: 1.2rem;
+  --font-size-sm: 1.6rem;
+  --font-size-md: 2.4rem;
+  --font-size-lg: 3rem;
+  --font-size-xl: 4rem;
+  --gap: 2rem;
+  --margin-sm: 2rem;
+  --margin-md: 3rem;
+  --item-min-height-sm: 20rem;
+  --item-min-height-md: 30rem;
 }
 body{
   background: linear-gradient(rgb(237, 241, 241),rgb(73, 206, 206),rgb(2, 48, 48));
