@@ -2,6 +2,6 @@
   padding: 0;
   margin: 0;
 }
-main{
+body{
   background: linear-gradient(rgb(226, 241, 247),rgb(37, 75, 197),rgb(3, 16, 61));
 }
