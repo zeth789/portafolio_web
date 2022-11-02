@@ -27,7 +27,7 @@ html{
   --font-size-md: 2.4rem;
   --font-size-lg: 3rem;
   --font-size-xl: 4rem;
-  --gap: 2rem;
+  --gap: 10rem;
   --margin-sm: 2rem;
   --margin-md: 3rem;
   --item-min-height-sm: 20rem;
@@ -37,7 +37,7 @@ body{
   font-family: var(--font-family);
   font-size: var(--font-size-sm);
   color: var(--green4);
-  background-color: var(--grey2);
+  background-color: var(--green4);
   letter-spacing: 1px;
   transition: background-color .25s,color .25s;
 }
@@ -51,6 +51,9 @@ img{
 }
 ul{
   list-style: none;
+  display: flex;
+  align-items:center;
+  justify-content: space-evenly;
 }
 input,
 button {
@@ -83,4 +86,20 @@ button {
   align-items: center;
   justify-content: space-between;
   padding-block: 1.5rem;
+}
+.list{
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  gap: var(--gap);
+}
+.list-link.current{
+  color: var(--purple1);
+}
+.logo{
+  font-size: var(--font-size-md);
+  color: var(--purple2);
+}
+.list-link:hover{
+  color: var(--green2);
 }
