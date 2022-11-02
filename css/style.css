@@ -5,3 +5,7 @@
 body{
   background: linear-gradient(rgb(237, 241, 241),rgb(73, 206, 206),rgb(2, 48, 48));
 }
+.fondo{
+  width: 150%;
+  height: 100%;
+}
