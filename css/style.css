@@ -3,6 +3,9 @@
   margin: 0;
   box-sizing: border-box;
 }
+html{
+    font-size: 62.5%;
+}
 @font-face {
   font-family: PIXELADE;
   src: url(PIXELADE.TTF);
@@ -31,9 +34,21 @@
   --item-min-height-md: 30rem;
 }
 body{
-  background: linear-gradient(rgb(237, 241, 241),rgb(73, 206, 206),rgb(2, 48, 48));
+  font-family: var(--font-family);
+  font-size: var(--font-size-sm);
+  color: var(--green4);
+  background-color: var(--grey2);
+  letter-spacing: 1px;
+  transition: background-color .25s,color .25s;
 }
-.fondo{
-  width: 150%;
-  height: 100%;
+a{
+  color: inherit;
+  text-decoration: none;
+}
+img{
+  max-width: 100%;
+  display: block;
+}
+ul{
+  list-style: none;
 }
