@@ -30,8 +30,9 @@ html{
   --item-min-height-md: 30rem;
 }
 body{
+  padding-top: 10rem;
   font-family: var(--font-family);
-  font-size: var(--font-size-sm);
+  font-size: var(--font-size-md);
   color: var(--green4);
   background-color: rgb(30, 49, 31);
   background-image: url(../img/fondo2.jpg);
@@ -58,6 +59,7 @@ ul{
   max-width: 160rem;
   margin: 0 auto;
   padding: 0 1.5rem;
+  object-fit: cover;
 }
 .header{
   background-color: var(--grey1);
@@ -69,11 +71,11 @@ ul{
   margin-bottom: 10px;
 }
 .navbar{
-  font-size: var(--font-size-lg);
+  font-size: var(--font-size-md);
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding-block: 1.5rem;
+  padding-block: 1rem;
 }
 .list{
   display: flex;
@@ -85,7 +87,7 @@ ul{
   width: 5rem;
 }
 .list-link:hover{
-  color: var(--green2);
+  color: var(--purple2);
   font-size: 115%;
 }
 .img-gallery{
@@ -128,6 +130,18 @@ ul{
   cursor: pointer;
 }
 p{
-  font-size: 100px;
+  
   color: var(--green1);
+}
+.section-title{
+  font-size: var(--font-size-xl);
+  background-color: rgba(206, 206, 206, 0.2);
+  width: 100%;
+  padding-block: 1.5rem;
+}
+.section-content{
+  font-size: var(--font-size-md);
+  color: #650C6B;
+  padding: 2rem 2rem 2rem 2rem;
+  text-align: center;
 }
