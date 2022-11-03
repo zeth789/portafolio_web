@@ -2,13 +2,12 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
 }
 html{
     font-size: 62.5%;
-}
-@font-face {
-  font-family: PIXELADE;
-  src: url(PIXELADE.TTF);
 }
 :root{
   --green1: #CFFF9E;
@@ -19,7 +18,6 @@ html{
   --purple2:#650C6B;
   --grey1: #DADDD8;
   --grey2: #797F76;
-  --font-family: PIXELADE;
   --transparent-light-color: rgba(255,255,255,.05);
   --transparent-dark-color: rgba(0,0,0,.75);
   --font-size-xsm: 1.2rem;
@@ -27,7 +25,7 @@ html{
   --font-size-md: 2.4rem;
   --font-size-lg: 3rem;
   --font-size-xl: 4rem;
-  --gap: 10rem;
+  --gap: 5rem;
   --margin-sm: 2rem;
   --margin-md: 3rem;
   --item-min-height-sm: 20rem;
@@ -53,7 +51,7 @@ ul{
   list-style: none;
   display: flex;
   align-items:center;
-  justify-content: space-evenly;
+  justify-content: space-between;
 }
 .container{
   max-width: 160rem;
@@ -67,8 +65,10 @@ ul{
   left: 0;
   width: 100%;
   z-index: 999;
+  margin-bottom: 10px;
 }
 .navbar{
+  font-size: var(--font-size-lg);
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -77,15 +77,11 @@ ul{
 .list{
   display: flex;
   align-items: center;
-  justify-content: space-evenly;
+  justify-content: space-between;
   gap: var(--gap);
 }
-.list-link.current{
-  color: var(--purple1);
-}
 .logo{
-  font-size: var(--font-size-md);
-  color: var(--purple2);
+  width: 5rem;
 }
 .list-link:hover{
   color: var(--green2);
@@ -119,7 +115,7 @@ ul{
   z-index: 10;
 }
 .full-img img{
-  max-height: 90%;
+  max-height: 70%;
   
 }
 .full-img span{
@@ -129,4 +125,8 @@ ul{
   font-size: 30px;
   color: var(--green4);
   cursor: pointer;
+}
+p{
+  font-size: 100px;
+  color: var(--green1);
 }
