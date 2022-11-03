@@ -89,13 +89,14 @@ ul{
 }
 .list-link:hover{
   color: var(--green2);
+  font-size: 115%;
 }
 .img-gallery{
   width: 80%;
   margin: 100px auto 50px;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  grid-gap: 30px;
+  grid-gap: 15px;
 }
 .img-gallery img{
   width: 100%;
@@ -103,7 +104,7 @@ ul{
   border-radius: 20px;
 }
 .img-gallery img:hover{
-  transform: scale(0.95);
+  transform: scale(1.05);
 }
 .full-img{
   width:100%;
