@@ -68,20 +68,20 @@ ul{
   left: 0;
   width: 100%;
   z-index: 999;
-  margin-bottom: 10px;
 }
 .navbar{
   font-size: var(--font-size-md);
   display: flex;
   align-items: center;
-  justify-content: space-between;
-  padding-block: 1rem;
+  justify-content: space-around;
 }
 .list{
   display: flex;
   align-items: center;
-  justify-content: space-between;
-  gap: var(--gap);
+  justify-content: space-around;  
+}
+li{
+  width: 20%;
 }
 .logo{
   width: 5rem;
@@ -134,10 +134,15 @@ p{
   color: var(--green1);
 }
 .section-title{
+
   font-size: var(--font-size-xl);
   background-color: rgba(206, 206, 206, 0.2);
   width: 100%;
   padding-block: 1.5rem;
+}
+.section-background{
+  width: 100%;
+  background-color: rgba(206, 206, 206, 0.4)
 }
 .section-content{
   font-size: var(--font-size-md);
