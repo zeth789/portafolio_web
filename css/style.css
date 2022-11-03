@@ -30,9 +30,13 @@ html{
   --item-min-height-md: 30rem;
 }
 body{
+  font-family: var(--font-family);
   font-size: var(--font-size-sm);
   color: var(--green4);
-  background-color: var(--green4);
+  background-color: rgb(30, 49, 31);
+  background-image: url(../img/fondo2.jpg);
+  background-size:contain;
+  background-blend-mode: multiply;
   letter-spacing: 1px;
   transition: background-color .25s,color .25s;
 }
