@@ -39,23 +39,31 @@
       <span onclick="closeFullImg()">X</span>
     </div>
     <div class="img-gallery">
-      <img src="img/granformato/lona centro social 1.jpg" alt="Lona Centro Social" onclick="openFullImg()">
-      <img src="img/granformato/lona cupcakes pizza.jpg" alt="Lona Cupcakes Pizza" onclick="openFullImg()">
-      <img src="img/granformato/lona froylan homeomedia.jpg" alt="Lona Homeomedia" onclick="openFullImg()">
-      <img src="img/granformato/lona psicologa sandra.jpg" alt="Lona Psicologa" onclick="openFullImg()">
-      <img src="img/granformato/lona villa navideña.jpg" alt="Lona Villa Navideña" onclick="openFullImg()">
-      <img src="img/granformato/lonadrones.jpg" alt=" Lona Drones" onclick="openFullImg()">
-      <img src="img/granformato/lonas barbacoa el rey.jpg" alt="Lona Barbacoa" onclick="openFullImg()">
-      <img src="img/granformato/taquería mixe .jpg" alt=" Lona Taquería" onclick="openFullImg()">
-      <img src="img/granformato/tarjetas joshua.jpg" alt=" Lona Estetica" onclick="openFullImg()">
+      <img src="img/granformato/lona centro social 1.jpg" alt="Lona Centro Social" onclick="openFullImg(this.src)">
+      <img src="img/granformato/lona cupcakes pizza.jpg" alt="Lona Cupcakes Pizza" onclick="openFullImg(this.src)">
+      <img src="img/granformato/lona froylan homeomedia.jpg" alt="Lona Homeomedia" onclick="openFullImg(this.src)">
+      <img src="img/granformato/lona psicologa sandra.jpg" alt="Lona Psicologa" onclick="openFullImg(this.src)">
+      <img src="img/granformato/lona villa navideña.jpg" alt="Lona Villa Navideña" onclick="openFullImg(this.src)">
+      <img src="img/granformato/lonadrones.jpg" alt=" Lona Drones" onclick="openFullImg(this.src)">
+      <img src="img/granformato/lonas barbacoa el rey.jpg" alt="Lona Barbacoa" onclick="openFullImg(this.src)">
+      <img src="img/granformato/taquería mixe .jpg" alt=" Lona Taquería" onclick="openFullImg(this.src)">
+      <img src="img/granformato/tarjetas joshua.jpg" alt=" Lona Estetica" onclick="openFullImg(this.src)">
     </div>
 
     <script>
       var fullImgBox = document.getElementById("fullImgBox");
+
       var fullImg = document.getElementById("fullImg");
-      function openFullImg(){
+
+      function openFullImg(pic){
         fullImgBox.style.display = "flex";
+        fullImg.src = pic;
       }
+
+      function closeFullImg(){
+        fullImgBox.style.display = "none";
+      }
+
     </script>
 
   </main>
