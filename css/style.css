@@ -3,9 +3,6 @@
   margin: 0;
   box-sizing: border-box;
 }
-
-@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap');
-
 html{
     font-size: 62.5%;
 }
@@ -18,9 +15,9 @@ html{
   --purple2:#650C6B;
   --grey1: #DADDD8;
   --grey2: #797F76;
-  --font-family: 'Josefin Sans', sans-serif;
   --transparent-light-color: rgba(255,255,255,.05);
   --transparent-dark-color: rgba(0,0,0,.75);
+  --font-family: 'Josefin Sans', sans-serif;
   --font-size-xsm: 1.2rem;
   --font-size-sm: 1.6rem;
   --font-size-md: 2.4rem;
@@ -33,7 +30,6 @@ html{
   --item-min-height-md: 30rem;
 }
 body{
-  font-family: var(--font-family);
   font-size: var(--font-size-sm);
   color: var(--green4);
   background-color: var(--green4);
