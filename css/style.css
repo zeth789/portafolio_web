@@ -61,7 +61,7 @@ header{
   margin: 10px;
   width: 50px;
 }
-ul{
+header ul{
   display: flex;
   justify-content: space-around;
   align-items:center;
@@ -145,11 +145,36 @@ p{
 
 .section-background{
   margin: 10px auto 10px;
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  grid-gap: 15px;
   width: 90%;
-  height:70vh;
   background-color: var(--grey1);
   border-radius: 20px;
+}
+.section-content{
+  padding: 3%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.nombre{
+  font-size: 6rem;
+  
+}
+.list{
+  color: var(--green3);
+  list-style: none;
+  display:flex;
+  justify-content: space-evenly;
+  align-content: center;
+  padding: 1.5rem;
+}
+.linea{
+  height: 80%;
+  width: 10%;
+  background-color: var(--purple2);
+}
+.tarjeta{
+  width: 45%;
+}
+.bio{
+ 
 }
