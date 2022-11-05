@@ -38,8 +38,6 @@ body{
   background-image: url(../img/fondo2.jpg);
   background-size:contain;
   background-blend-mode: multiply;
-  letter-spacing: 1px;
-  transition: background-color .25s,color .25s;
 }
 a{
   color: inherit;
@@ -51,47 +49,36 @@ img{
 }
 header{
   display: flex;
-  justify-content: space-around;
-  align-items: center;
+  justify-content: space-between;
+  align-items:center;
   background-color: var(--grey1);
   position: fixed;
   top: 0;
-  left: 0;
   width: 100%;
   z-index: 999;
 }
 .logo{
-  margin: 1rem;
-  width: 5rem;
+  margin: 10px;
+  width: 50px;
 }
 ul{
   display: flex;
   justify-content: space-around;
-  align-items: center;
+  align-items:center;
   list-style-type: none;
+  width: 50%;
 }
-li{
-  padding-left: 15rem;
-}
-li:hover{
+li a:hover{
   color: var(--purple1);
 }
-
-
-
-
 .dropbtn {
   border: none;
   cursor: pointer;
 }
-
-
-
 .dropdown {
   position: relative;
   display: inline-block;
 }
-
 .dropdown-content {
   display: none;
   position: absolute;
@@ -101,7 +88,6 @@ li:hover{
   z-index: 1;
   margin-top: 2.3rem;
 }
-
 .dropdown-content a {
   font-size: var(--font-size-sm);
   color: var(--green3);
@@ -109,16 +95,13 @@ li:hover{
   text-decoration: none;
   display: block;
 }
-
-.dropdown a:hover {background-color: #ddd;}
-
+.dropdown a:hover {
+  background-color: #ddd;
+  color: var(--purple1);
+}
 .show {display: block;}
-
-
-
-
 .img-gallery{
-  width: 80%;
+  width: 90%;
   margin: 100px auto 50px;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
@@ -157,22 +140,16 @@ li:hover{
   cursor: pointer;
 }
 p{
-  color: var(--green1);
+  color: var(--purple2);
 }
-.section-title{
 
-  font-size: var(--font-size-xl);
-  background-color: rgba(206, 206, 206, 0.2);
-  width: 100%;
-  padding-block: 1.5rem;
-}
 .section-background{
-  width: 100%;
-  background-color: rgba(206, 206, 206, 0.4)
-}
-.section-content{
-  font-size: var(--font-size-md);
-  color: #650C6B;
-  padding: 2rem 2rem 2rem 2rem;
-  text-align: center;
+  margin: 10px auto 10px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-gap: 15px;
+  width: 90%;
+  height:70vh;
+  background-color: var(--grey1);
+  border-radius: 20px;
 }
