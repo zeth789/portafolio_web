@@ -67,6 +67,12 @@ header ul{
   align-items:center;
   list-style-type: none;
   width: 50%;
+  color: var(--green3);
+  list-style: none;
+  display:flex;
+  justify-content: space-between;
+  align-content: center;
+  padding: 1.5rem;
 }
 li a:hover{
   color: var(--purple1);
@@ -116,7 +122,7 @@ li a:hover{
   transform: scale(1.05);
 }
 .full-img{
-  width:100%;
+  width:90%;
   height: 100vh;
   background: rgba(206, 206, 206, 0.9);
   position:fixed;
@@ -157,15 +163,7 @@ p{
 }
 .nombre{
   font-size: 6rem;
-  
-}
-.list{
-  color: var(--green3);
-  list-style: none;
-  display:flex;
-  justify-content: space-evenly;
-  align-content: center;
-  padding: 1.5rem;
+  text-shadow: 3px 3px 3px var(--grey2);
 }
 .linea{
   height: 80%;
@@ -174,4 +172,20 @@ p{
 }
 .tarjeta{
   width: 45%;
+}
+.bio{
+  text-align: justify;
+  line-height: 2.8rem;
+}
+.list{
+  width: 97%;
+  justify-content: space-between;
+  margin: 1rem auto 1rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  grid-gap: 4px;
+}
+.list p{
+  font-size: var(--font-size-lg);
+  color: var(--green3);
 }
