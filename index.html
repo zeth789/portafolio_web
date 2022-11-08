@@ -21,7 +21,7 @@
         <a href="#">CV</a>
       </li>
       <li class="dropdown">
-        <a href="" onclick="myFunction()" class="dropbtn">
+        <a  onclick="myFunction()" class="dropbtn">
           Portafolio
         </a>
         <div id="myDropdown" class="dropdown-content">
@@ -60,7 +60,7 @@
         </div>
         <span class="linea"></span>
         <div class="tarjeta">
-          <span class="titulotarjeta">EX360</span><br>
+          <span class="titulotarjeta">Ex360</span><br>
           <div class="subrayado1"></div>
           <P>2020-2021</P>
           <ul class="biolist">
@@ -82,65 +82,12 @@
 
     <!-- portafolio -->
     
-      <p id="portafolio">Portafolio</p>
-    
-    <div class="full-img" id="fullImgBox">
-      <img src="img/granformato/lona centro social 1.jpg" alt="Lona Centro Social" id="fullImg">
-      <span onclick="closeFullImg()">X</span>
-    </div>
-    <a id="portafolio"></a>
+    <p id="portafolio">Portafolio</p>
     <div class="img-gallery">
-      <img src="img/granformato/lona centro social 1.jpg" alt="Lona Centro Social" onclick="openFullImg(this.src)">
-      <img src="img/granformato/lona cupcakes pizza.jpg" alt="Lona Cupcakes Pizza" onclick="openFullImg(this.src)">
-      <img src="img/granformato/lona froylan homeomedia.jpg" alt="Lona Homeomedia" onclick="openFullImg(this.src)">
-      <img src="img/granformato/lona psicologa sandra.jpg" alt="Lona Psicologa" onclick="openFullImg(this.src)">
-      <img src="img/granformato/lona villa navideña.jpg" alt="Lona Villa Navideña" onclick="openFullImg(this.src)">
-      <img src="img/granformato/lonadrones.jpg" alt=" Lona Drones" onclick="openFullImg(this.src)">
-      <img src="img/granformato/lonas barbacoa el rey.jpg" alt="Lona Barbacoa" onclick="openFullImg(this.src)">
-      <img src="img/granformato/taquería mixe .jpg" alt=" Lona Taquería" onclick="openFullImg(this.src)">
-      <img src="img/granformato/tarjetas joshua.jpg" alt=" Lona Estetica" onclick="openFullImg(this.src)">
+      
     </div>
 
-    <script>
-      var fullImgBox = document.getElementById("fullImgBox");
-
-      var fullImg = document.getElementById("fullImg");
-
-      function openFullImg(pic){
-        fullImgBox.style.display = "flex";
-        fullImg.src = pic;
-      }
-
-      function closeFullImg(){
-        fullImgBox.style.display = "none";
-      }
-
-      
-     
-      /* When the user clicks on the button, 
-          toggle between hiding and showing the dropdown content */
-          function myFunction() {
-            document.getElementById("myDropdown").classList.toggle("show");
-          }
-
-          // Close the dropdown if the user clicks outside of it
-          window.onclick = function(event) {
-            if (!event.target.matches('.dropbtn')) {
-              var dropdowns = document.getElementsByClassName("dropdown-content");
-              var i;
-              for (i = 0; i < dropdowns.length; i++) {
-                var openDropdown = dropdowns[i];
-                if (openDropdown.classList.contains('show')) {
-                  openDropdown.classList.remove('show');
-                }
-              }
-            }
-          }
-
-          
-
-
-    </script>
+    
 
     <a id="Contacto">
       <p>
@@ -152,5 +99,26 @@
   <footer>
 
   </footer>
+  <script>
+    /* When the user clicks on the button, 
+        toggle between hiding and showing the dropdown content */
+        function myFunction() {
+          document.getElementById("myDropdown").classList.toggle("show");
+        }
+
+        // Close the dropdown if the user clicks outside of it
+        window.onclick = function(event) {
+          if (!event.target.matches('.dropbtn')) {
+            var dropdowns = document.getElementsByClassName("dropdown-content");
+            var i;
+            for (i = 0; i < dropdowns.length; i++) {
+              var openDropdown = dropdowns[i];
+              if (openDropdown.classList.contains('show')) {
+                openDropdown.classList.remove('show');
+              }
+            }
+          }
+        }
+  </script>
 </body>
 </html>
