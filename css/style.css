@@ -15,8 +15,6 @@ html{
   --purple2:#650C6B;
   --grey1: #DADDD8;
   --grey2: #797F76;
-  --transparent-light-color: rgba(255,255,255,.05);
-  --transparent-dark-color: rgba(0,0,0,.75);
   --font-family: 'Josefin Sans', sans-serif;
   --font-size-xsm: 1.2rem;
   --font-size-sm: 1.6rem;
@@ -24,10 +22,6 @@ html{
   --font-size-lg: 3rem;
   --font-size-xl: 4rem;
   --gap: 5rem;
-  --margin-sm: 2rem;
-  --margin-md: 3rem;
-  --item-min-height-sm: 20rem;
-  --item-min-height-md: 30rem;
 }
 body{
   padding-top: 10rem;
@@ -72,7 +66,7 @@ header ul{
   display:flex;
   justify-content: space-between;
   align-content: center;
-  padding: 1.5rem;
+  padding-right: 2rem;
 }
 li a:hover{
   color: var(--purple1);
@@ -156,22 +150,23 @@ p{
   border-radius: 20px;
 }
 .section-content{
-  padding: 3%;
+  padding: 3rem;
   display: flex;
   justify-content: space-evenly;
   align-items: center;
 }
 .nombre{
-  font-size: 6rem;
+  font-size: 5rem;
   text-shadow: 3px 3px 3px var(--grey2);
 }
 .linea{
-  height: 80%;
-  width: 10%;
-  background-color: var(--purple2);
+  border-top: 2px solid var(--purple2);
 }
 .tarjeta{
   width: 45%;
+}
+.titulotarjeta{
+  font-size: var(--font-size-lg);
 }
 .bio{
   text-align: justify;
@@ -188,4 +183,22 @@ p{
 .list p{
   font-size: var(--font-size-lg);
   color: var(--green3);
+}
+.biolist{
+  margin-top: 2rem;
+}
+.biolist li{
+  margin: 0.8rem;
+}
+.subrayado1{
+  border-bottom: 2px solid var(--green4);
+  width: 9.5rem;
+  margin-top: -5px;
+  margin-bottom: 8px;
+}
+.subrayado2{
+  border-bottom: 2px solid var(--green4);
+  width: 21rem;
+  margin-top: -5px;
+  margin-bottom: 8px;
 }
