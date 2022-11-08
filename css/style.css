@@ -37,10 +37,7 @@ a{
   color: inherit;
   text-decoration: none;
 }
-img{
-  max-width: 100%;
-  display: block;
-}
+
 header{
   display: flex;
   justify-content: space-between;
@@ -51,8 +48,8 @@ header{
   width: 100%;
   z-index: 999;
 }
-.logo{
-  margin: 10px;
+header a img{
+  margin: 8px;
   width: 50px;
 }
 header ul{
@@ -100,45 +97,7 @@ li a:hover{
   color: var(--purple1);
 }
 .show {display: block;}
-.img-gallery{
-  width: 90%;
-  margin: 100px auto 50px;
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  grid-gap: 15px;
-}
-.img-gallery img{
-  width: 100%;
-  cursor: pointer;
-  border-radius: 20px;
-}
-.img-gallery img:hover{
-  transform: scale(1.05);
-}
-.full-img{
-  width:90%;
-  height: 100vh;
-  background: rgba(206, 206, 206, 0.9);
-  position:fixed;
-  top: 0;
-  left: 0;
-  display: none;
-  align-items: center;
-  justify-content: center;
-  z-index: 10;
-}
-.full-img img{
-  max-height: 70%;
-  
-}
-.full-img span{
-  position: absolute;
-  top: 8%;
-  right: 2%;
-  font-size: 30px;
-  color: var(--green4);
-  cursor: pointer;
-}
+
 p{
   color: var(--purple2);
 }
