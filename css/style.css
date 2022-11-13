@@ -48,9 +48,9 @@ header{
   width: 100%;
   z-index: 999;
 }
-header a img{
-  margin: 8px;
-  width: 50px;
+.logo{
+  width: 3em;
+  padding: 0.25em;
 }
 header ul{
   display: flex;
